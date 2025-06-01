@@ -1,0 +1,5 @@
+{
+  "./**/*.{jsx,tsx}": [
+    "eslint --no-warn-ignored --max-warnings 0"
+  ]
+}
