@@ -9,8 +9,12 @@ type HeroProps = {
 function HeroActions() {
   return (
     <div className="hero-actions">
-      <button className="btn btn-primary">Get Started</button>
-      <button className="btn btn-secondary">Learn More</button>
+      <a href="/about" className="btn btn-link">
+        <button className="btn btn-primary">Get Started</button>
+      </a>
+      <a href="/contact" className="btn btn-link">
+        <button className="btn btn-secondary">Learn More</button>
+      </a>
     </div>
   )
 }

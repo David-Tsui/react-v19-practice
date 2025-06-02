@@ -1,20 +1,22 @@
 import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import ContactPage from './pages/ContactPage'
+import AboutPage from './pages/AboutPage'
+import NotFoundPage from './pages/NotFoundPage'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <Header />
-      <Hero
-        title="喜歡音樂或繪圖嗎？"
-        subtitle="探索我們的藝文共享空間"
-        description="在這裡，您可以與其他藝術愛好者分享您的創作，並欣賞他們的作品。無論是音樂、繪畫還是其他形式的藝術，我們都歡迎您的加入！"
-      />
-      <div className="card">
-        <Button count={count} setCount={setCount} />
-      </div>
-      <Contact />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </BrowserRouter>
       <Footer />
     </>
   )
