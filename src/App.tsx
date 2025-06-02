@@ -1,5 +1,3 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -7,24 +5,17 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
+      <Header />
+      <Hero
+        title="喜歡音樂或繪圖嗎？"
+        subtitle="探索我們的藝文共享空間"
+        description="在這裡，您可以與其他藝術愛好者分享您的創作，並欣賞他們的作品。無論是音樂、繪畫還是其他形式的藝術，我們都歡迎您的加入！"
+      />
       <div className="card">
         <Button count={count} setCount={setCount} />
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Contact />
+      <Footer />
     </>
   )
 }
