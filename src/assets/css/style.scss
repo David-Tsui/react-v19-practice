@@ -1,0 +1,29 @@
+.nav-list-item {
+  display: inline-block;
+  padding: 0.35rem .5rem;
+}
+
+.nav-item {
+  --bs-nav-link-color: #ff84df;
+  --bs-nav-link-hover-color: #ff56b9;
+  --bs-nav-link-active-color: #ff24a4;
+  --bs-nav-link-disabled-color: #6c757d;
+
+  color: var(--bs-nav-link-color);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--bs-nav-link-hover-color);
+  }
+  &.nav-item--active {
+    color: var(--bs-nav-link-active-color);
+    font-weight: bold;
+  }
+  &.nav-item--active:hover {
+    color: var(--bs-nav-link-active-color);
+  }
+  &.nav-item--disabled {
+    color: var(--bs-nav-link-disabled-color);
+    pointer-events: none;
+  }
+}
