@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom"
-import WeatherReport from "../components/WeatherReport"
 
 const HomePage = () => {
   return (

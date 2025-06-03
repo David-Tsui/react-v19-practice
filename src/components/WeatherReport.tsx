@@ -65,7 +65,7 @@ const WeatherDataTable = ({ data, loading }: { data: WeatherData[] | null, loadi
   )
 }
 
-const WeatherReport = () => {
+function WeatherReport() {
   const endpoint = 'http://localhost:3000/weather'
 
   const [weatherData, setWeatherData] = useState<WeatherData[] | null>(null)
