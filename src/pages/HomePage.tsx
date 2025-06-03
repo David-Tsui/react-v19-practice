@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom"
+import WeatherReport from "../components/WeatherReport"
 
 const HomePage = () => {
   return (
@@ -23,6 +24,16 @@ const HomePage = () => {
             <NavLink to="/events/3">音樂與自然 - 戶外音樂會</NavLink>
           </li>
         </ul>
+      </section>
+
+      <section className="weather">
+        <h2>即時天氣資訊</h2>
+        <p>查看當地的天氣情況，讓您的藝術創作不受天氣影響！</p>
+        <WeatherReport />
+      </section>
+
+      <section className="raffle">
+        <Raffle />
       </section>
     </div>
   )
