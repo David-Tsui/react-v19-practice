@@ -5,6 +5,7 @@ import ContactPage from './pages/ContactPage'
 import AboutPage from './pages/AboutPage'
 import NotFoundPage from './pages/NotFoundPage'
 import EventPage from './pages/EventPage'
+import MemoPage from './pages/MemoPage'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/events/:eventId" element={<EventPage />} />
+          <Route path="/memo" element={<MemoPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </BrowserRouter>

@@ -4,7 +4,8 @@ function Navbar() {
   const navItems = [
     { name: "首頁", path: "/" },
     { name: "關於我們", path: "/about" },
-    { name: "聯絡我們", path: "/contact" }
+    { name: "聯絡我們", path: "/contact" },
+    { name: "靈感備忘錄", path: "/memo" },
   ]
   const NavLinks = navItems.map((item) => (
     <li key={item.name} className="nav-list-item">
