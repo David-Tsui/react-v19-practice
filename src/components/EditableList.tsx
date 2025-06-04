@@ -81,12 +81,20 @@ function EditableList(props: EditableListProps) {
 
     return (
       <>
-        <p>{item.text}</p>
+        <p data-testid={`editable-item-text-${item.id}`}>{item.text}</p>
         <div className="editable-item-actions">
-          <button disabled={isEditing} onClick={() => handleEdit(item.id, item.text)}>
+          <button
+            disabled={isEditing}
+            onClick={() => handleEdit(item.id, item.text)}
+            data-testid="editable-item-edit-btn"
+          >
             編輯
           </button>
-          <button disabled={isEditing} onClick={() => handleDelete(item.id)}>
+          <button
+            disabled={isEditing}
+            onClick={() => handleDelete(item.id)}
+            data-testid="editable-item-delete-btn"
+          >
             刪除
           </button>
         </div>
@@ -126,11 +134,16 @@ function EditableList(props: EditableListProps) {
           <button
             disabled={!isNotEmpty || !isNotSaved}
             onClick={() => handleSave(item.id)}
+            data-testid="editable-item-save-btn"
           >
             儲存
           </button>
-          <button onClick={() => handleCancel(item.id)}>取消</button>
-
+          <button
+            onClick={() => handleCancel(item.id)}
+            data-testid="editable-item-cancel-btn"
+          >
+            取消
+          </button>
         </div>
       </>
     )
@@ -198,6 +211,7 @@ function EditableList(props: EditableListProps) {
           <button
             onClick={() => handleAdd()}
             disabled={ items.some(item => item.id === editingId && !item.text.trim()) }
+            data-testid="editable-list-add-btn"
           >
             新增
           </button>
