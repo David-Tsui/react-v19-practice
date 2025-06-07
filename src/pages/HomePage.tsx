@@ -1,5 +1,3 @@
-import { NavLink } from "react-router-dom"
-
 const HomePage = () => {
   return (
     <div>
@@ -12,17 +10,7 @@ const HomePage = () => {
       <section className="events">
         <h2>即將舉辦的活動</h2>
         <p>敬請期待我們即將舉辦的藝文活動，讓我們一起探索藝術的無限可能！</p>
-        <ul>
-          <li>
-            <NavLink to="/events/1">心與星的距離 - 李芳個人小型畫展</NavLink>
-          </li>
-          <li>
-            <NavLink to="/events/2">科技與藝術的交融 - 藝術家論壇</NavLink>
-          </li>
-          <li>
-            <NavLink to="/events/3">音樂與自然 - 戶外音樂會</NavLink>
-          </li>
-        </ul>
+        <EventsBento />
       </section>
 
       <section className="weather">

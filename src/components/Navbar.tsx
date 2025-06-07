@@ -4,6 +4,7 @@ function Navbar() {
   const navItems = [
     { name: "首頁", path: "/" },
     { name: "關於我們", path: "/about" },
+    { name: "合作活動", path: "/events" },
     { name: "聯絡我們", path: "/contact" },
     { name: "靈感備忘錄", path: "/memo" },
   ]

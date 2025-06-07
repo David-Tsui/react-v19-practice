@@ -1,4 +1,46 @@
 {
+  "events": [
+    {
+      "id": 1,
+      "title": "心與星的距離 - 李芳個人小型畫展",
+      "date": "2025-07-15",
+      "description": "這是一個關於心靈與星空的藝術展覽，展出李芳的最新作品，本次作品靈感來自於她對宇宙的思考和感悟，最具代表性的作品包括《星空下的思考》、《心宙》等代表作，喜歡藝術的朋友不容錯過。",
+      "location": "台北市藝術中心",
+      "imageUrl": "https://placehold.co/533x800"
+    },
+    {
+      "id": 2,
+      "title": "科技與藝術的交融 - 藝術家論壇",
+      "date": "2025-08-20",
+      "description": "邀請多位藝術家和科技專家探討科技如何影響現代藝術。",
+      "location": "台北市文化大學",
+      "imageUrl": "https://placehold.co/600x600"
+    },
+    {
+      "id": 3,
+      "title": "音樂與自然 - 戶外音樂會",
+      "date": "2025-09-10",
+      "description": "在美麗的自然環境中享受音樂，放鬆心靈。",
+      "location": "陽明山國家公園",
+      "imageUrl": "https://placehold.co/400x280"
+    },
+    {
+      "id": 4,
+      "title": "鋼琴之夜 - 炫光鋼琴演奏會",
+      "date": "2025-11-05",
+      "description": "邀請知名鋼琴家進行一場精彩的鋼琴演奏會，帶來音樂的饗宴。",
+      "location": "台北市音樂廳",
+      "imageUrl": "https://placehold.co/400x280"
+    },
+    {
+      "id": 5,
+      "title": "愛情與詩 - 浪漫詩歌朗誦會",
+      "date": "2025-02-14",
+      "description": "邀請知名詩人分享他們的作品，並進行現場朗誦。",
+      "location": "台北市文化中心",
+      "imageUrl": "https://placehold.co/400x280"
+    }
+  ],
   "weather": [
     {
       "date": "2025-06-01",
