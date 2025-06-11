@@ -1,3 +1,4 @@
+import Endpoints from "../config/endpoints"
 import type { WeatherData } from "../types/weather"
 
 const WeatherDataTable = ({ data, loading }: { data: WeatherData[] | null, loading: boolean }) => {
@@ -66,8 +67,6 @@ const WeatherDataTable = ({ data, loading }: { data: WeatherData[] | null, loadi
 }
 
 function WeatherReport() {
-  const endpoint = 'http://localhost:3000/weather'
-
   const [weatherData, setWeatherData] = useState<WeatherData[] | null>(null)
   const [loading, setLoading] = useState<boolean>(true)
 
@@ -76,7 +75,7 @@ function WeatherReport() {
     setWeatherData(null)
 
     try {
-      const response = await fetch(endpoint)
+      const response = await fetch(Endpoints.weather)
       await new Promise(resolve => setTimeout(resolve, 1000))
 
       if (!response.ok) {

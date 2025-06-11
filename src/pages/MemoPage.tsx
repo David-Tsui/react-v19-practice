@@ -1,7 +1,7 @@
 import type { EditableListItem } from "../components/EditableList"
 import EditableList from "../components/EditableList"
 
-function MemoPage() {
+const MemoPage = () => {
   const memoListStored = localStorage.getItem('memoList') || '[]'
   const [memoList, setMemoList] = useState<EditableListItem[]>(JSON.parse(memoListStored))
   const [searchQuery, setSearchQuery] = useState<string>('')

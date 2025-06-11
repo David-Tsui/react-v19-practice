@@ -15,7 +15,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "prepare": "husky",
-    "run-api": "npx json-server --watch mock/database.json",
+    "run-api": "npx json-server --watch mock/database.json --port 3333",
     "test:coverage": "vitest run --reporter=html --coverage",
     "test:watch": "vitest watch",
     "test": "vitest run --reporter=verbose",
